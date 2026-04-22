@@ -134,7 +134,7 @@ h1,h2,h3,.topbar-title,.owner-name,.section-title,.section-heading,.music-title,
   border-radius:50%;
   padding:3px;
   margin:0 auto 18px;
-  background:linear-gradient(135deg, #f267ff, #8f32ff);
+  background:linear-gradient(135deg,#f267ff,#8f32ff);
   box-shadow:0 0 28px rgba(212,85,255,.38);
   overflow:hidden;
 }
@@ -144,6 +144,7 @@ h1,h2,h3,.topbar-title,.owner-name,.section-title,.section-heading,.music-title,
   height:100%;
   border-radius:50%;
   object-fit:cover;
+  object-position:center;
   display:block;
 }
 
@@ -652,6 +653,7 @@ h1,h2,h3,.topbar-title,.owner-name,.section-title,.section-heading,.music-title,
   font-size:14px;
   color:#fff;
   word-break:break-all;
+  min-height:18px;
 }
 
 .sender-time{
@@ -660,6 +662,7 @@ h1,h2,h3,.topbar-title,.owner-name,.section-title,.section-heading,.music-title,
   font-size:14px;
   text-align:right;
   line-height:1.4;
+  min-width:38px;
 }
 
 .music-head{
