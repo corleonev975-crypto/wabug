@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Xinn Owner Panel</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<!-- SPLASH -->
+<div id="splashScreen" class="splash-screen">
+  <div class="splash-ring"></div>
+  <div class="splash-title">OWNER XINN</div>
+  <div class="splash-sub">Loading mobile dashboard...</div>
+</div>
+
+<!-- LOGIN -->
+<section id="loginPage" class="login-page active-page">
+  <div class="login-glow glow-a"></div>
+  <div class="login-glow glow-b"></div>
+
+  <div class="login-card">
+    <div class="login-avatar-wrap">
+      <!-- 🔥 FIX GIF -->
+      <img src="assets/avatar.gif">
+    </div>
+
+    <h1>OWNER XINN</h1>
+    <p class="login-text">Masuk ke dashboard neon premium</p>
+
+    <form id="loginForm" class="login-form">
+      <label>Username</label>
+      <input id="username" type="text" value="xinn" required>
+
+      <label>Password</label>
+      <input id="password" type="password" value="ownerxinn" required>
+
+      <button type="submit" class="primary-btn">LOGIN PANEL</button>
+    </form>
+  </div>
+</section>
+
+<!-- APP -->
+<section id="appPage" class="app-page">
+
+  <div class="bg-particles"></div>
+
+  <div class="app-shell">
+
+    <!-- NAV -->
+    <header class="topbar">
+      <button class="topbar-btn">☰</button>
+      <div class="topbar-title">Xinn Owner Panel</div>
+      <button id="audioToggle" class="topbar-btn">🔊</button>
+    </header>
+
+    <!-- HOME -->
+    <main id="homeTab" class="tab-page active-tab">
+
+      <section class="hero-card panel">
+        <div class="hero-row">
+
+          <div class="hero-avatar">
+            <!-- 🔥 FIX GIF -->
+            <img src="assets/avatar.gif">
+          </div>
+
+          <div class="hero-text">
+            <div class="owner-name">OWNER XINN</div>
+
+            <div class="badge-row">
+              <span class="badge badge-purple">OWNER</span>
+              <span class="badge badge-dark">EXP 2030</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-banner">
+          <!-- 🔥 FIX GIF -->
+          <img src="assets/banner.gif">
+        </div>
+      </section>
+
+      <section class="panel update-card">
+        <div class="update-title">🔥 The New Update v1.0</div>
+        <div class="update-desc">
+          Tema neon ungu baru, avatar animasi, banner animasi, dan UI mobile premium.
+        </div>
+      </section>
+
+      <section class="panel info-card">
+        <h3 class="section-title">Account Information</h3>
+
+        <div class="info-row"><span>Username</span><strong>XINN</strong></div>
+        <div class="info-row"><span>Role</span><strong class="green">OWNER</strong></div>
+        <div class="info-row"><span>Server</span><strong class="green">ONLINE</strong></div>
+        <div class="info-row"><span>Expired</span><strong>2030-01-01</strong></div>
+        <div class="info-row"><span>Sending</span><strong>6</strong></div>
+        <div class="info-row"><span>Sender</span><strong>1</strong></div>
+      </section>
+
+    </main>
+
+    <!-- WHATSAPP -->
+    <main id="whatsappTab" class="tab-page">
+
+      <section class="wa-profile">
+        <div class="wa-avatar-ring"></div>
+        <div class="wa-name">OWNER XINN</div>
+
+        <div class="badge-row center">
+          <span class="badge badge-purple">OWNER</span>
+          <span class="badge badge-dark">EXP: 2030-01-01</span>
+        </div>
+      </section>
+
+      <section class="wa-banner panel">
+        <!-- 🔥 FIX GIF -->
+        <img src="assets/banner.gif">
+      </section>
+
+      <section class="panel form-card">
+
+        <label class="field-label">📱 Target Number</label>
+        <input class="field-input" placeholder="Contoh: 628xxxxxx">
+
+        <label class="field-label">🧩 Type Menu</label>
+        <select class="field-input">
+          <option>Quick WhatsApp</option>
+          <option>Message Panel</option>
+          <option>Sender Preview</option>
+        </select>
+
+        <button class="primary-btn full-btn">OPEN WHATSAPP</button>
+
+        <p class="safe-note">UI demo saja.</p>
+
+      </section>
+    </main>
+
+    <!-- TOOLS -->
+    <main id="toolsTab" class="tab-page">
+      <section class="panel">
+        <h3 class="section-title big">SENDER MANAGER</h3>
+      </section>
+    </main>
+
+  </div>
+
+  <!-- NAV BOTTOM -->
+  <nav class="bottom-nav">
+    <button class="nav-btn active" data-tab="homeTab">Home</button>
+    <button class="nav-btn" data-tab="whatsappTab">WhatsApp</button>
+    <button class="nav-btn" data-tab="toolsTab">Tools</button>
+  </nav>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

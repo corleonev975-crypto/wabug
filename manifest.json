@@ -1,0 +1,8 @@
+{
+  "name": "Xinn Owner Panel",
+  "short_name": "XinnPanel",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#05030b",
+  "theme_color": "#111118"
+}
